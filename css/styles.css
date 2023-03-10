@@ -301,17 +301,16 @@ color: #404BBF;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--third-text-color);
+  margin: 0;
 }
 .hero-modal-form {
   display: flex;
   flex-direction: column;
-  border: none;
-  margin: 0;
-  padding: 0;
 }
 .hero-modal-form-label{
   display: flex;
   flex-direction: column;
+  margin-top: var(--secondary-settings-margin);
 }
 .hero-modal-form-label-name {
   font-weight: 400;
@@ -320,17 +319,15 @@ color: #404BBF;
   letter-spacing: 0.04em;
   color: #8E8F99;
 }
-.hero-modal-form-label-name {
-  margin-top: var(--secondary-settings-margin);
-  margin-bottom: 4px;
-}
 .hero-modal-form-label-input {
+  outline: none;
   border: none;
   border-radius: 4px;
   padding: 8px 16px 8px 38px;
   width: 100%;
 }
 .hero-modal-form-input-icon {
+  margin-top: 4px;
   position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -353,9 +350,11 @@ color: #404BBF;
   fill: var(--accent-color);
 }
 .hero-modal-form-label-comment {
+  outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 8px 16px;
+  margin-top: 4px;
   height: 120px;
   resize: none;
   transition: border var(--transition-duration);
@@ -682,6 +681,7 @@ padding-bottom: var(--basic-settings-padding-section);
 .footer-container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .footer-container-logo {
   max-width: 264px;
@@ -752,8 +752,9 @@ padding-bottom: var(--basic-settings-padding-section);
 }
 /* -------------------------- form subscribe ------------------------ */
 .footer-subscribe {
-display: flex;
-}
+  display: flex;
+  flex-direction: column;
+  }
 .footer-label-input{
   outline: none;
   margin-top: 16px;
@@ -781,7 +782,8 @@ display: flex;
   border-radius: 4px;
   border: none;
   color: var(--second-text-color);
-  margin: 0;
+  margin-left: 24px;
+  margin-top: 16px;
 }
 .footer-subscribe-icon {
   fill: var(--fourth-background-color);
@@ -795,6 +797,6 @@ display: flex;
   flex-direction: column;
 }
 .footer-wrapper-btn {
-  padding-top: 40px;
-  margin: 0;
+display: flex;
+flex-wrap: wrap;
 }
